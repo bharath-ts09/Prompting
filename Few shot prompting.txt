@@ -1,0 +1,38 @@
+Perform the sentiment classification based on the provided inputs. Classify it either negative or positive
+
+### Examples ###
+
+The presentation was awesome!! Positive
+The game was really bad!! Negetive
+What a horrible play !!
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Extract the technical specifications from the text below in JSON format.
+
+<Example>
+Input : Galaxy S24 Ultra, CPU Speed 3.39 GHz, CPU Type Octa Core, Size 172.5mm (6.8" full rectangle), Resolution 3120 x 1440 (Quad HD+), Rear Camera 200MP + 50 MP, Zoom Optical Zoom 3x and 5x, Optical quality Zoom 2x and 10x (Enabled by Adaptive Pixel sensor), Storage 512GB, Memory 12GB, Number of SIM Dual-SIM, Android OS
+
+OUTPUT:
+{
+	"product":"Galaxy S24 Ultra",
+	"Processor CPU Speed":"3.39 GHz",
+	"Processor CPU Type":"Octa Core",
+	"Display size":"172.5mm (6.8" full rectangle)",
+	"Display Resolution":"3120 x 1440 (Quad HD+)",
+	"Camera":"200MP + 50 MP",
+	"Camera Zoom":"Optical Zoom 3x and 5x, Optical quality Zoom 2x and 10x (Enabled by Adaptive Pixel sensor)",
+	"Storage/Memory":"512GB/12GB",
+	"SIM":"Dual-SIM",
+	"OS":"Android"
+}
+
+Input : Apple iPhone 15 Pro Max, Hexa-core (2x3.78 GHz + 4x2.11 GHz), Size 6.7 inches, 1290 x 2796 pixels, Camera 48MP, Storage 512GB, Memory 8GB, iOS 17 OS
+
+OUTPUT:
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
