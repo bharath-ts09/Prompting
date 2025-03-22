@@ -54,3 +54,18 @@ Antibiotics target specific features of bacterial cells that are not found in hu
 
 **Response**
 Antibiotics work by targeting unique bacterial structures and processes, such as cell wall formation, protein synthesis, DNA/RNA replication, and essential metabolic pathways, minimizing harm to human cells.
+
+
+
+****Explanation****
+
+
+**Objective**
+Explain Zero shot prompting to a small kid
+
+**Prompt**
+Explain Zero shot prompting as you are explaining to a 10 year old
+
+
+**Response**
+Okay, imagine you’re asking me a question about something I’ve never been told before, like, “What’s the capital of Mars?” Even though I’ve never been taught about Mars’ capital, I try my best to guess the answer using what I already know. That’s kind of like zero-shot prompting — when you ask me to do something without giving me any examples first, and I figure it out based on what I’ve learned!
