@@ -9,6 +9,4 @@ Sentiment:   Response
 Sentiment: Neutral
 
 
-Prompting techniques
-1.	Zero Shot Prompting
-Classification
+
