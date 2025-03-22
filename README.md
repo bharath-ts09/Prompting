@@ -146,3 +146,69 @@ OUTPUT:
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+********Chain of Thought Prompting********
+-------------------------------------------
+
+****Few Shot Chain of thought****
+
+**Objective**
+
+With an example provided perform multi step calculations
+
+**Prompt**
+
+Q: If there are 5 Bananas, 2 Apple with Raju. Raju ate 2 banana and 1 apple. He later bought 3 Pear. How many fruits does he have in the end
+A: Raju starts with 5 Bananas and 2 apples, total 7 fruits. He eats 2 bananas and 1 apple, he now has 3 bananas and 1 apple. He buys 3 pears, adding those 3 bananas + 1 apple + 3 pears = 7 fruits
+Q: If there are 3 cars in the parking lot and 2 more cars arrive, Half an hour later 1 car leave. How many cars are remaining in the parking lot?
+A:
+
+**Response**
+
+A: There are initially 3 cars in the parking lot. 🚗🚗🚗
+
+2 more cars arrive → Now there are 5 cars. 🚗🚗🚗🚗🚗
+
+1 car leaves after half an hour → 5 - 1 = 4 cars remaining. ✅
+
+-------------------------------------------------------------
+
+****Zero Shot Chain of thought****
+
+**Objective**
+
+Perform Zero shot Chain of thought using "Lets think step by step"
+
+**Prompt**
+
+Q: If there are 5 Bananas, 2 Apple with Raju. Raju ate 2 banana and 1 apple. He later bought 3 Pear. How many fruits does he have in the end
+Lets think step by step 
+
+**Response**
+
+Sure! Let’s think step by step:
+
+Starting fruits:
+
+🍌 5 Bananas + 🍎 2 Apples = 7 fruits
+
+Raju eats:
+
+2 Bananas → 5 - 2 = 3 Bananas left
+
+1 Apple → 2 - 1 = 1 Apple left
+
+Fruits remaining after eating:
+
+3 Bananas + 1 Apple = 4 fruits
+
+Raju buys 3 Pears: 🍐🍐🍐
+
+4 fruits + 3 Pears = 7 fruits
+
+✅ Final count: 3 Bananas, 1 Apple, and 3 Pears = 7 fruits.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
