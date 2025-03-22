@@ -9,4 +9,11 @@ Sentiment:   Response
 Sentiment: Neutral
 
 
-
+****Translation****
+**Objective**
+English to Spanish translation
+**Prompt**
+Translate the following English text to Spanish
+Text: Hello! How are you doing today
+**Response**
+¡Hola! ¿Cómo estás hoy?
