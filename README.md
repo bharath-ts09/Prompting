@@ -1,5 +1,6 @@
     **Prompting techniques**
 1.	******Zero Shot Prompting******
+2.	---------------------------------
 
 
 
@@ -22,6 +23,7 @@ Sentiment: Neutral
 
 
 ****Translation****
+----------------------
 
 
 **Objective**
@@ -37,6 +39,7 @@ Text: Hello! How are you doing today
 
 
 ****Summarization****
+-----------------------
 
 
 **Objective**
@@ -59,6 +62,7 @@ Antibiotics work by targeting unique bacterial structures and processes, such as
 
 
 ****Explanation****
+--------------------
 
 
 **Objective**
@@ -74,8 +78,10 @@ Okay, imagine you’re asking me a question about something I’ve never been to
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ****2. Few Shot Prompting****
+-------------------------------
 
 ****Classification****
+-----------------------
 
 **Objective**
 Classify to appropriate sentiment based on the below examples
@@ -96,6 +102,7 @@ Negetive
 
 
 ****Specification****
+-----------------------
 
 **Objective**
 Extract the Technical Specification from the JSON format
@@ -136,3 +143,5 @@ OUTPUT:
 	"Storage/Memory": "512GB/8GB",
 	"OS": "iOS 17"
 }
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
