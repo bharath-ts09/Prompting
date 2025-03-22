@@ -211,4 +211,17 @@ Raju buys 3 Pears: 🍐🍐🍐
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+****Auto-COT****
 
+Auto-CoT consists of two main stages:
+
+Stage 1): question clustering: partition questions of a given dataset into a few clusters
+Stage 2): demonstration sampling: select a representative question from each cluster and generate its reasoning chain using Zero-Shot-CoT with simple heuristics
+
+Code for Auto-COT is here below
+
+https://github.com/amazon-science/auto-cot
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
