@@ -5,6 +5,8 @@
 
 
 **Classification**
+
+
 **Objective**
 Identify if the vacation was Neutral, Positive or Negetive - Version 1
 **Prompt**Prompt
@@ -15,6 +17,8 @@ Sentiment: Neutral
 
 
 ****Translation****
+
+
 **Objective**
 English to Spanish translation
 **Prompt**
