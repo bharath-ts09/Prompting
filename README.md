@@ -1,11 +1,12 @@
     **Prompting techniques**
 1.	**Zero Shot Prompting**
 **Classification**
-Objective
+**Objective**
 Identify if the vacation was Neutral, Positive or Negetive - Version 1
-Prompt
+**Prompt**Prompt
 Text: I think the vacation is okay.
-Sentiment:   Response
+Sentiment:
+**Response**
 Sentiment: Neutral
 
 
