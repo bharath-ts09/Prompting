@@ -335,9 +335,10 @@ FINAL: [2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97,
 
 ---------------------------------------------------------------------------------------------------------
 
-****Self Consistency Prompting****
+********Self Consistency Prompting********
+-------------------------------------------------
 
-****Approach tht simply asks model same chain of thought prompt multiple times and takes majority result as Final answer****
+****Approach that simply asks model same chain of thought prompt multiple times and takes majority result as Final answer****
 
 **Objective**
 
