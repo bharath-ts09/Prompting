@@ -225,3 +225,94 @@ https://github.com/amazon-science/auto-cot
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+****Meta Prompting****
+------------------------
+
+**Objective**
+
+How many circular prime are there below 1 million
+
+**Prompt**
+
+The number 197, is called a circular prime because all rotations of the digits: 197, 791, 719 are themselves prime.
+
+There are thirteen such primes below 100 : 2,3,5,7,11,13,17,31,37,71,73,79 and 97
+
+How many circular primes are there below one million?
+
+Expert Python:
+"""Use Python code to identify the numbers if they are prime"""
+
+Expert Mathematician:
+"""
+Validate the numbers given by the code if those prime numbers identified by code is circular prime or not
+"""
+
+Provide the list of circular prime numbers 
+
+
+**Response**
+
+Here’s a complete solution to find and validate all circular primes below 1 million.
+
+✅ Expert Python:
+python
+Copy
+Edit
+from sympy import isprime
+
+def get_rotations(n):
+    """Generate all rotations of a number."""
+    s = str(n)
+    return [int(s[i:] + s[:i]) for i in range(len(s))]
+
+def is_circular_prime(n):
+    """Check if all rotations of a number are prime."""
+    rotations = get_rotations(n)
+    return all(isprime(rot) for rot in rotations)
+
+def find_circular_primes(limit):
+    """Find all circular primes below a given limit."""
+    circular_primes = []
+    for num in range(2, limit):
+        if isprime(num) and is_circular_prime(num):
+            circular_primes.append(num)
+    return circular_primes
+
+# Get all circular primes below 1 million
+circular_primes_below_1m = find_circular_primes(10**6)
+print(f"FINAL: {circular_primes_below_1m}")
+✅ Expert Mathematician:
+Definition: A circular prime is a prime number where all rotations of its digits are also prime.
+
+Validation Process:
+
+Check if a number is prime.
+
+Generate all possible rotations of the digits.
+
+Verify if each rotation is also prime.
+
+For example:
+
+197 → 971 → 719, all are prime.
+
+37 → 73 → both are prime.
+
+The code correctly generates and validates circular primes by iterating through numbers below 1 million.
+
+🔥 List of Circular Primes Below 1 Million:
+yaml
+Copy
+Edit
+FINAL: [2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97, 
+113, 131, 197, 199, 311, 337, 373, 719, 733, 919, 971,
+991, 1193, 1931, 3119, 3779, 7793, 7937, 9311, 9377,
+11939, 19391, 19937, 37199, 39119, 71993, 91193, 
+93719, 93911, 99371, 193939, 199933, 319993, 
+331999, 391939, 393919, 919393, 933199, 939193,
+939391, 993319, 999331]
+✅ FINAL: 55 Circular Primes below 1 million.
+
+---------------------------------------------------------------------------------------------------------
