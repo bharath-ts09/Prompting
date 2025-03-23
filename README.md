@@ -334,3 +334,101 @@ FINAL: [2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97,
 ✅ FINAL: 55 Circular Primes below 1 million.
 
 ---------------------------------------------------------------------------------------------------------
+
+****Self Consistency Prompting****
+
+****Approach tht simply asks model same chain of thought prompt multiple times and takes majority result as Final answer****
+
+**Objective**
+
+Find the age of sister comparing the age with her brother
+
+**Prompt**
+
+Q: Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+A: She bought 5 bagels for $3 each. This means she spent $15. She has $8 left.
+Q: When I was 6 my sister was half my age. Now I’m 70 how old is my sister?
+A:
+
+**Response 1**
+
+When you were 6 years old, your sister was half your age, which means she was:
+
+6
+÷
+2
+=
+3
+ years old.
+6÷2=3 years old.
+The age difference between you and your sister is:
+
+6
+−
+3
+=
+3
+ years.
+6−3=3 years.
+Now that you are 70 years old, your sister is:
+
+70
+−
+3
+=
+67
+ years old.
+70−3=67 years old.
+✅ Final answer: Your sister is 67 years old. 🎉
+
+
+**Response 2**
+
+When you were 6 years old, your sister was half your age, which means she was:
+
+6
+−
+3
+=
+3
+ years old.
+6−3=3 years old.
+The age difference between you and your sister is 3 years.
+
+Now that you are 70 years old, your sister is:
+
+70
+−
+3
+=
+67
+ years old.
+70−3=67 years old.
+✅ Final answer: Your sister is 67 years old. 🎉
+
+
+**Response 3**
+
+When you were 6 years old, your sister was half your age, meaning she was:
+
+6
+−
+3
+=
+3
+ years old.
+6−3=3 years old.
+The age difference between you and your sister is 3 years.
+
+Now that you are 70 years old, your sister is:
+
+70
+−
+3
+=
+67.
+70−3=67.
+✅ She has $67$ years left. 🎉
+
+
+---------------------------------------------------------------------------------------------------------------------
