@@ -263,27 +263,44 @@ Edit
 from sympy import isprime
 
 def get_rotations(n):
+
     """Generate all rotations of a number."""
+    
     s = str(n)
+    
     return [int(s[i:] + s[:i]) for i in range(len(s))]
 
 def is_circular_prime(n):
+
     """Check if all rotations of a number are prime."""
+    
     rotations = get_rotations(n)
+    
     return all(isprime(rot) for rot in rotations)
+    
 
 def find_circular_primes(limit):
+
     """Find all circular primes below a given limit."""
+    
     circular_primes = []
+    
     for num in range(2, limit):
+    
         if isprime(num) and is_circular_prime(num):
+	
             circular_primes.append(num)
+	    
     return circular_primes
 
 # Get all circular primes below 1 million
+
 circular_primes_below_1m = find_circular_primes(10**6)
+
 print(f"FINAL: {circular_primes_below_1m}")
+
 ✅ Expert Mathematician:
+
 Definition: A circular prime is a prime number where all rotations of its digits are also prime.
 
 Validation Process:
