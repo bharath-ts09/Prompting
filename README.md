@@ -430,5 +430,5 @@ Now that you are 70 years old, your sister is:
 70−3=67.
 ✅ She has 67$ years left. 🎉
 
-
+**The last response gave a slightly different answer, saying she has 67$ years left**
 ---------------------------------------------------------------------------------------------------------------------
